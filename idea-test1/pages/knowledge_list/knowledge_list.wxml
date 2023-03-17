@@ -1,0 +1,17 @@
+<!--pages/knowledge/knowledge.wxml-->
+<view class="container">
+	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+		<view class="service-list">
+			<navigator class="service-item" wx:for="{{servicelist}}" wx:key="{{item.id}}" url="../knowledge_type/knowledge_type?id={{item.id}}">
+                <!--list的显示关注这里-->
+				<view class="service-text">
+                    <view class="service-id">序号：{{item.id}}</view>
+                    <view class="service-title">类别：{{item.type}}</view>
+                    <view class="service-content">内容：{{item.content}}</view>
+                </view>
+			</navigator>
+		</view>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+	</scroll-view>
+</view>
+

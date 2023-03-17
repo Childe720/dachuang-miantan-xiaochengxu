@@ -1,0 +1,49 @@
+<!--pages/feedback/feedback.wxml-->
+
+<view class="container container-gray">
+  <view class="group">
+    <view class="group-header">反馈</view>
+    <view class="group-body">
+      <view class="input-list">
+
+        <view class="input-item">
+			<text class="input-item-label">联系方式</text>
+			<view class="input-item-content">
+				<input type="text" placeholder="请输入您的联系方式" bindinput="getDeviceTel"></input>
+			</view>
+		</view>
+		<view class="input-item">
+			<text class="input-item-label">问题和意见</text>
+			<view class="input-item-content">
+				<input type="text" placeholder="请描述您遇到的问题及对本项目的意见" bindinput="getDeviceContent"></input>
+			</view>
+		</view>
+
+
+        <view class="input-item input-item-full">
+          <text class="input-item-label">图片上传</text>
+          <view class="group-body">
+            <view class="img-upload">
+              <view class="img-add" bindtap="chooseImage"></view>
+              <view class="img-item" bindlongtap="editImage" wx:for="{{uploadimgs}}" wx:key="{{index}}">
+                <icon type="clear" size="20" color="red" style="display:{{editable?'block':'none'}}" bindtap="deleteImg"
+                  data-index="{{index}}" />
+                <image src="{{item}}" mode="aspectFill"></image>
+              </view>
+            </view>
+          </view>
+          <!--<text class="input-item-label">返回结果</text>
+          <view class="group-body">
+            <text>{{attachment_object_id}}</text>
+          </view>
+          <view class="group-body">
+            <text>{{attachment_url}}</text>
+          </view>-->
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-submit">
+    <button class="btn-block btn-orange" bindtap="applySubmit">提交</button>
+  </view>
+</view>

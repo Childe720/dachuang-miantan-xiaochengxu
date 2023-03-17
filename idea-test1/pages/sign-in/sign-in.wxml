@@ -1,0 +1,19 @@
+<!--pages/sign-in/sign-in.wxml-->
+ 
+<view class='main'>
+  <view class='box'>
+    <view class='log'>
+      <image class='wechat' src='../image/wechat.png'></image>
+      <button class='logBtn' bindtap='info'>是否同意授权？</button>
+      <image class='wechat' src='../image/wechat.png'></image>
+      <button class='logBtn' bindtap='saveInfo'>微信一键登录</button>
+    </view> 
+  </view>
+</view> 
+
+
+
+
+
+
+

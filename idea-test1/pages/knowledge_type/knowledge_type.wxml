@@ -1,0 +1,19 @@
+<!--pages/knowledge_type/knowledge_type.wxml-->
+<view class="container">
+    <view class="btn-submit">
+        <button class="btn-block btn-orange" bindtap="return">返回</button>
+    </view>
+	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+        <navigator class="service-item" wx:for="{{servicelist}}" wx:key="{{item.id}}">
+		<view class="service-list"><!--list的显示关注这里-->
+				<view class="service-text">
+                    <view class="service-id">序号：{{item.id}}</view>
+                    <view class="service-content">内容：{{item.content}}</view>
+                </view>
+        </view>
+        </navigator>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+    </scroll-view>
+</view>
+
+

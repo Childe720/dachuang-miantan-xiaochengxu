@@ -1,0 +1,37 @@
+<!--pages/forum_comment/forum_comment.wxml-->
+<view class="container">
+     <!--发表回复的表单-->
+     <view class="group">
+		<view class="group-header">回复本则话题</view>
+		<view class="group-body">
+			<view class="input-list">
+				<view class="input-item">
+					<text class="input-item-label">内容</text>
+					<view class="input-item-content">
+						<input type="text" placeholder="请输入内容" bindinput="getDeviceContent"></input>
+					</view>
+				</view>
+			</view>
+		</view>
+    </view>
+    <view class="btn-submit">
+        <button class="btn-block btn-orange" bindtap="reply">回复</button>
+    </view>
+    <view class="btn-submit">
+        <button class="btn-block btn-orange" bindtap="return">返回</button>
+    </view>
+	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+        <navigator class="service-item" wx:for="{{servicelist}}" wx:key="{{item.id}}">
+		<view class="service-list"><!--list的显示关注这里-->
+				<view class="service-text">
+                    <view class="service-id">序号：{{item.id}}</view>
+                    <view class="service-openid">评论者：{{item.openid}}</view>
+                    <view class="service-content">正文：{{item.content}}</view>
+                    <view class="service-create_time">发布时间：{{item.create_time}}</view>
+                </view>
+        </view>
+        </navigator>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+    </scroll-view>
+</view>
+

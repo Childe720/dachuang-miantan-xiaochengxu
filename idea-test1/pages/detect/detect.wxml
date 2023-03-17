@@ -1,0 +1,34 @@
+<!--pages/detect/detect.wxml-->
+
+<view class="container container-gray">
+  <view class="group">
+    <view class="group-header">面瘫检测（请上传图片或授权拍照功能）</view>
+    <view class="group-body">
+      <view class="input-list">
+        <view class="input-item input-item-full">
+          <text class="input-item-label">请点击下方栏目选择提交照片或拍照上传您需要检测的面部图片</text>
+          <view class="group-body">
+            <view class="img-upload">
+              <view class="img-add" bindtap="chooseImage"></view>
+              <view class="img-item" bindlongtap="editImage" wx:for="{{uploadimgs}}" wx:key="{{index}}">
+                <icon type="clear" size="20" color="red" style="display:{{editable?'block':'none'}}" bindtap="deleteImg"
+                  data-index="{{index}}" />
+                <image src="{{item}}" mode="aspectFill"></image>
+              </view>
+            </view>
+          </view>
+          <text class="input-item-label">返回结果</text>
+          <view class="group-body">
+            <text>{{attachment_object_id}}</text>
+          </view>
+          <view class="group-body">
+            <text>{{attachment_url}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-submit">
+    <button class="btn-block btn-orange" bindtap="applySubmit">提交</button>
+  </view>
+</view>

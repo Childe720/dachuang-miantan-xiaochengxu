@@ -1,0 +1,33 @@
+<!--pages/forum_list/forum_list.wxml-->
+<view class="container">
+	<!--CRUD-->
+    <view class='main'>
+        <!--此处按钮样式需替换-->
+      <button class='btn-block btn-orange' bindtap='goto_add'>发表评论</button>
+      <button class='btn-block btn-orange' bindtap='goto_find'>查找</button>
+    </view> 
+
+	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+		<view class="service-list">
+			<navigator class="service-item" wx:for="{{servicelist}}" wx:key="{{item.id}}" url="../forum_comment/forum_comment?id={{item.id}}">
+                <!--list的显示关注这里-->
+				<view class="service-text">
+                    <view class="service-id">序号：{{item.id}}</view>
+                    <view class="service-title">标题：{{item.title}}</view>
+                    <view class="service-openid">作者：{{item.openid}}</view>
+                    <view class="service-content">正文：{{item.content}}</view>
+                    <view class="service-create_time">发布时间：{{item.create_time}}</view>
+                    <text bindtap="onItemCommentTap" data-itemid="{{item.id}}">评论</text>
+				<!--	<view class="service-tags">
+						<text bindtap="onItemModifyTap" data-itemid="{{item.id}}">修改</text>
+                        <text bindtap="onItemDeleteTap" data-itemid="{{item.id}}">删除</text>
+					</view>
+					<text class="service-city">服务城市：{{item.city}}</text>-->
+                </view>
+                
+			</navigator>
+		</view>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+	</scroll-view>
+</view>
+
