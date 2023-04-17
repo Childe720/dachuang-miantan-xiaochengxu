@@ -1,0 +1,52 @@
+<!--pages/knowledge/knowledge.wxml-->
+<view class='header'>
+  <view class='search' bindtap='jumptoSearch'>
+    <view class='slogan'>知识科普</view>
+  </view>
+  <!-- 内导航页面 -->
+  <view class='nav'>
+    <view bindtap='tabChange' data-tab-index="{{0}}" class="nav-item {{tabIndex === 0 ? 'active' : ''}}">热门</view>
+    <view bindtap='tabChange' data-tab-index="{{1}}" class="nav-item {{tabIndex === 1 ? 'active' : ''}}">关注</view>
+    <view bindtap='tabChange' data-tab-index="{{2}}" class="nav-item {{tabIndex === 2 ? 'active' : ''}}">最新</view>
+    <view bindtap='tabChange' data-tab-index="{{3}}" class="nav-item {{tabIndex === 3 ? 'active' : ''}}">分类</view>
+    <view class='active-line' style="left: {{75 + tabIndex * 190}}rpx;"></view>
+  </view>
+</view>
+
+<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+  
+  <view class="news-list">
+    
+		<navigator wx:for="{{servicelist}}" wx:key="{{item.id}}" url="../knowledge_type/knowledge_type?id={{item.id}}">
+                <!--list的显示关注这里-->
+      <view class="news-item">
+				<view class="item-head">
+          <text class="service-title">类别：{{item.type}}</text>
+        </view>
+        <image class='description-image' src='{{item.img_url}}'></image>
+        <text class="service-content">{{item.content}}</text>
+      </view>
+		</navigator>
+  </view>
+
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+</scroll-view>
+
+<!-- 原代码 -->
+<!-- <view class="container">
+	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+		<view class="service-list">
+			<navigator class="service-item" wx:for="{{servicelist}}" wx:key="{{item.id}}" url="../knowledge_type/knowledge_type?id={{item.id}}"> -->
+                <!--list的显示关注这里-->
+				<!-- <view class="service-text">
+                    <view class="service-id">序号：{{item.id}}</view>
+                    <view class="service-title">类别：{{item.type}}</view>
+                    <view class="service-content">内容：{{item.content}}</view>
+                </view>
+			</navigator>
+		</view>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+	</scroll-view>
+</view> -->
+
+

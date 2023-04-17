@@ -1,0 +1,59 @@
+<!--pages/mine/mine.wxml-->
+<!-- 个人页面 -->
+<!-- 头部 -->
+<view class='mine_info'>
+  <image class='mine_banner' src='../image/background.jpg'></image>
+  <view class='mine_info_head'>
+    <view class='mine_head_left' bindtap='info'>
+      <image class='mine_head_leftPic' src='../image/info.png'></image>
+      <view class='mine_head_leftDes'>消息</view>
+    </view>
+    <view class='jiange'></view>
+    <view class='mine_head_center'>
+      <view class='headBorder'><open-data type="userAvatarUrl" class="Head"></open-data> </view>
+      <view class='dian'></view>
+    </view>
+    <view class='jiange'></view>
+    <view class='mine_head_right' bindtap='addr'>
+      <image src='../image/todefectactive .png' class='mine_head_rightPic'></image>
+      <view class='mine_head_rightDes'>面瘫检测</view>
+    </view>
+  </view>
+</view>
+<!-- 内容 -->
+<view class='list_content'>
+
+  <!-- <view class='list' bindtap='report'>
+    <view class='list_left'>
+      <image class='listIcon' src='../image/report.png'></image>
+      <view class='listName'>我的报告</view>
+    </view>
+    <image src='../image/jiantou.png' class='jiantou'></image>
+  </view> -->
+
+  <view class='list' bindtap='com'>
+    <view class='list_left'>
+      <image class='listIcon' src='../image/com.png'></image>
+      <view class='listName'>交流论坛</view>
+    </view>
+    <image src='../image/jiantou.png' class='jiantou'></image>
+  </view>
+
+  <view class='list' bindtap="know">
+    <view class='list_left'>
+      <image class='listIcon' src='../image/share.png'></image>
+      <view class='listName'>面瘫科普</view>
+    </view>
+    <image src='../image/jiantou.png' class='jiantou'></image>
+  </view>
+
+
+  <view class='list' bindtap='view'>
+    <view class='list_left'>
+      <image class='listIcon' src='../image/view.png'></image>
+      <view class='listName'>意见反馈</view>
+    </view>
+    <image src='../image/jiantou.png' class='jiantou'></image>
+  </view>
+  <button class='signOut' bindtap='signOut'>退出登录</button>
+</view>

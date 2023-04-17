@@ -1,0 +1,44 @@
+<!--pages/sign-in/sign-in.wxml-->
+ 
+<!-- 此处是一个swiper轮播 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block>
+    <swiper-item>
+      <image widthFix class='banner' src="../image/sign-in/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image widthFix class='banner' src="../image/sign-in/2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image widthFix class='banner' src="../image/sign-in/3.jpg"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='package'>
+  <text class='describe'>请点击下方按钮，授权登录，了解面瘫相关知识，还可以亲身体验检测噢</text>
+  <view class='kong'></view>
+  <button class="storage" bindtap='info'>同意授权</button>
+  <view class='kong'></view>
+  <button class='storage' bindtap='saveInfo'>微信一键登录</button>
+  <view class='kong'></view>
+  <button class='storage' bindtap='in'>进入</button>
+  <text class='baoxian'>承诺保护用户隐私安全</text>
+</view>
+
+<!--<view class='main'>
+  <view class='box'>
+    <view class='log'>
+      <image class='wechat' src='../image/wechat.png'></image>
+      <button class='logBtn' bindtap='info'>是否同意授权？</button>
+      <image class='wechat' src='../image/wechat.png'></image>
+      <button class='logBtn' bindtap='saveInfo'>微信一键登录</button>
+    </view> 
+  </view>
+</view>-->
+
+
+
+
+
+
