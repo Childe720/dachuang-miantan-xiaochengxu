@@ -1,0 +1,55 @@
+{
+    "pages": [
+        "pages/sign-in/sign-in",
+        "pages/forum_list/forum_list",
+        "pages/knowledge_list/knowledge_list",
+        "pages/knowledge_type/knowledge_type",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/detect/detect",       
+        "pages/forum_add/forum_add",
+        "pages/forum_find/forum_find",
+        "pages/forum_comment/forum_comment",
+        "pages/feedback/feedback",
+        "pages/person/person",
+        "pages/info/info",
+        "pages/realName/realName"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0C8FFF",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/forum_list/forum_list",
+                "text": "交流",
+                "iconPath": "./pages/image/forum.png",
+                "selectedIconPath": "./pages/image/forumactive.png"
+            },
+            {
+                "pagePath": "pages/knowledge_list/knowledge_list",
+                "text": "科普知识",
+                "iconPath": "./pages/image/knowdge.png",
+                "selectedIconPath": "./pages/image/konwdgeactive.png"
+            },
+            {
+                "pagePath": "pages/detect/detect",
+                "text": "面瘫检测",
+                "iconPath": "./pages/image/defect.png",
+                "selectedIconPath": "./pages/image/defectactive.png"
+            },
+            {
+                "pagePath": "pages/person/person",
+                "text": "个人中心",
+                "iconPath": "pages/image/个人.png",
+                "selectedIconPath": "pages/image/个人_2.png"
+            }
+            
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
