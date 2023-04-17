@@ -1,0 +1,532 @@
+/* pages/forum_find/forum_find.wxss */
+.service-list{
+	padding: 0 20rpx;
+}
+.service-item{
+	display: flex;
+	padding: 20rpx 0; 
+	border-bottom: 1rpx solid #e8e8e8;
+}
+.service-img{
+	width: 220rpx;
+	height: 156rpx;
+}
+.service-item image{
+	width: 220rpx;
+	height: 156rpx;
+}
+.service-text{
+	flex: 1;
+	margin-left: 20rpx;
+	width: 100%;
+}
+.service-text .service-tite{
+	color: #333;
+	width: 100%;
+	font-size: 34rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.service-tags{
+	margin: 6rpx 0;
+}
+.service-tags text{
+	padding: 6rpx 16rpx;
+	border: 1rpx solid #f7982a;
+	line-height: 1;
+	color: #f7982a;
+	font-size: 28rpx;
+	border-radius: 4rpx;
+	margin-right: 10rpx;
+	margin-bottom: 10rpx;
+	white-space: nowrap;
+}
+.service-city{
+	color: #666;
+}
+
+.view_tupian_wenzi {
+	/* height: 120rpx; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+	/* 圆角 */
+	border-radius: 20rpx;
+  
+	/* 边 */
+	border: 3rpx solid #E0E3DA;
+	box-shadow:5rpx 5rpx 5rpx 5rpx #E0E3DA;
+  
+	background-color: #e1edfa;
+	margin: 30rpx;
+  
+	/* padding使得文字和图片不至于贴着边框 */
+	padding: 30rpx;
+  
+}
+  /* 包裹两行文字 */
+  
+  .view_wenzi2 {
+	width: 100%;
+	margin-left: 25rpx;
+	display: flex;
+	flex-direction: column;
+}
+  /* 小字 */
+.text_small {
+	font-size: 30rpx;
+	word-break: break-all;
+	color: #7a7878;
+	margin-top: 10rpx
+}  
+
+/*搜索栏*/
+.weui-search-bar {
+	position: relative;
+	padding: 8px 10px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	box-sizing: border-box;
+	background-color: #EFEFF4;
+	border-top: 1rpx solid #D7D6DC;
+	border-bottom: 1rpx solid #D7D6DC;
+  }
+  .weui-icon-search_in-box {
+	position: absolute;
+	left: 10px;
+	top: 7px;
+  }
+  .weui-search-bar__form {
+	position: relative;
+	-webkit-box-flex: 1;
+	-webkit-flex: auto;
+			flex: auto;
+	border-radius: 5px;
+	background: #FFFFFF;
+	border: 1rpx solid #E6E6EA;
+  }
+  .weui-search-bar__box {
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 1;
+  }
+  .weui-search-bar__input {
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+  }
+  .weui-search-bar__cancel-btn {
+	margin-left: 10px;
+	line-height: 28px;
+	color: #1951c9;
+	white-space: nowrap;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /*SpiderCard*/
+.w100 {
+	width: 100%;
+	
+}
+
+.p-card {
+ display: flex;
+ justify-content: center;
+   /* flex-flow: column;
+  position: relative; */
+  padding-left: 54rpx;
+  padding-right: 54rpx;
+}
+
+.profile {
+  width: 174rpx;
+  height: 174rpx;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  position: absolute;
+}
+
+.content {
+  padding: 30rpx;
+  margin-top: 96rpx;
+  width: 90%;
+  border: 4rpx solid #0f0061;
+  border-radius: 16rpx;
+  background:#fff;
+}
+
+.content-top {
+	width: 100%;
+	display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.content-detail {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+
+}
+
+.content-top-img {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+
+.content-detail-top view {
+  flex-flow: row;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 50rpx;
+  font-weight: 900;
+  padding: 8rpx;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, #000879, #0679fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font:400 20px/50rpx "Microsoft Yahei";
+  text-align: center;
+  font-style:oblique;
+}
+
+.title {
+  font-size: 34rpx;
+  padding: 8rpx;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, #000879, #0679fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* .btns {
+  justify-content: center;
+  flex-flow: row;
+} */
+
+.icon {
+	margin: 32rpx;
+	display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+
+/* .btns text {
+  font-size: 28rpx;
+  margin-top: 16rpx;
+} */
+
+
+.detail-bottom {
+  /* justify-content: flex-start; */
+  padding-left:45rpx;
+  padding-right:45rpx;
+}
+
+.item {
+  margin: 20rpx;
+  flex-flow: row;
+  width: 100%;
+}
+
+
+.foot {
+  margin-top: 28rpx;
+  flex-flow: row;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.position {
+  height: 100%;
+  align-items: flex-end;
+  right: 0rpx;
+}
+
+.items {
+  flex-flow: row;
+  height: auto;
+  align-items: flex-end;
+}
+
+.pcard-foot {
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 32prx;
+}
+
+.address {
+  justify-content: space-between;
+}
+
+.address_view {
+  flex-flow: row;
+}
+
+
+
+.parent {
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+}
+.m-footer{
+  margin-top: 50rpx;
+}
+.menu-icon{
+  width: 84rpx;
+  height: 84rpx;
+}
+.menu-title-txt{
+  color: rgb(255, 255, 255);
+}
+.menu-list{
+  flex: 1;
+}
+.menu-list-middle{
+  margin-left: 130rpx;
+  margin-right: 130rpx;
+}
+
+.index-bg {
+	position: fixed;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+.m-more{
+  margin-top: 50rpx;
+  margin-bottom: 36rpx;
+}
+.more-btn{
+    width: 44rpx;
+    height: 44rpx;
+}
+.hide{
+  display: none;
+ }
+ .show{ 
+  display: block;
+ }
+
+ .home-company{
+  margin-top: 84rpx;
+  padding-left: 54rpx;
+  padding-right: 54rpx;
+}
+.icon-border{
+  border-width:5rpx;
+  height:25rpx;
+  border-radius:15rpx;    
+}
+.firm-name{
+  font-size:32rpx;
+  font-weight:bold;
+  margin-left:20rpx;    
+}
+.photo-model{
+  margin: 46rpx 0rpx 32rpx 0rpx;
+}
+.photo-swiper{
+  margin-top: 26rpx;
+  justify-content: space-between;
+}
+.icon-up{
+  width: 50rpx;
+  height: 50rpx;
+}
+.video-play {
+  border-width:1rpx;
+  height:316rpx;
+  width:100%;
+  border-radius:15rpx;
+  margin-bottom: 78rpx;
+}  
+.tip-txt {
+  font-size:22rpx;
+  color:rgb(93, 93 , 93);
+  line-height:20rpx;
+  margin-top: 58rpx;  
+}
+	
+/*common.wxss*/
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  line-height: 100%;
+}
+
+button::after {
+  border: none;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.img24 {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.img28 {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.img32 {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.img48 {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+/* ==================================主题================================== */
+
+
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ p-card ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.detail-bottom text {
+  margin-left: 16rpx;
+  font-size: 32rpx;
+  color: #000f99;
+}
+
+.pcard-foot text {
+  font-size: 20rpx;
+  margin-top: 8rpx;
+  color: #1808a8;
+}
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ p-card ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ p-input ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.p-input {
+  width: 100%;
+  height: 68rpx;
+  width: 480rpx;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #5bccb1;
+  justify-content: flex-start;
+  padding-right: 12rpx;
+}
+.input-border{
+  border: 1px solid #ebfcf8;
+}
+
+.p-input-more {
+  width: 100%;
+  height: 68rpx;
+  justify-content: flex-start;
+  padding-right: 12rpx;
+}
+
+.input-title {
+  color: #5bccb1;
+  height: 100%;
+  font-size: 28rpx;
+  justify-content: center;
+}
+
+.p-i {
+  color: #5bccb1;
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  flex: 1;
+  margin-right: 10rpx;
+}
+
+.input-right {
+  background-color: transparent;
+  padding: 5rpx;
+  border: 1px solid #5bccb1;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #5bccb1;
+}
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ p-input ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ p-head ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.p-head {
+  height: 286rpx;
+  margin-top: 20rpx;
+  width: 618rpx;
+  margin-left: 66rpx;
+  margin-right: 66rpx;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #5bccb1;
+  border-radius: 10rpx;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.head-img {
+  width: 182rpx;
+  height: 182rpx;
+  border: 2rpx solid #5bccb1;
+  border-radius: 91rpx;
+}
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ p-head ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+
+/* ==================================主题================================== */

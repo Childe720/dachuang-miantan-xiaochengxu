@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class='wall-container'>
+  <view class='search' bindtap='goto_find'>
+      <view class='slogan'>交流论坛</view>
+      <view class='search-area'>搜索你想了解的问题或用户...</view>
+  </view>
+
+  <!-- 内容 -->
+<view class='body-content'>
+  <scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+      <!--列表 -->
+      <navigator class="service-item" wx:for="{{servicelist}}" wx:key="{{item.id}}" url="../forum_comment/forum_comment?id={{item.id}}">
+        <view class="body-list">
+            <view class="body-item">
+              <view class="item-header">
+            <!-- <view class="avatar-item" bindtap="openUserInfo" data-id="{{item.id}}">
+              <image class="avatar-border" src="../image/border.png"></image>
+              <image class="user-avatar" src="{{item.poster_url}}"></image>
+            </view> -->
+
+            <view class="nickname-item">
+              <view class="nickname-top">
+                <view class="poster-nickname">{{item.title}}</view>
+              </view>
+              <!--<view class="nickname-bottom">
+                <view class="nickname-flag" >用户</view>
+                <view class="bottom-name" >{{item.openid}}</view>
+              </view>-->
+            </view>
+          </view>
+        <view class="item-content">
+            <view class="item-content-word" wx:if="{{item.content}}">{{item.content}}</view>
+          </view>
+          
+          <view class="item-footer">
+            <view class="date">{{item.create_time}}</view>
+            <view class="letter-icon">
+              <image bindtap='showCommentInput' 
+                  data-objid="{{item.id}}"
+                  data-objtype='1' src="../image/index-topic-comment.png"></image>
+              <view>9</view>
+            </view>
+            <view class="letter-icon">
+              <image data-obj="{{item.id}}" bindtap='praise' src="../image/index-topic-zan.png"></image>
+              <view>10</view>
+            </view>
+          </view>
+
+          </view>
+        </view>
+			</navigator>
+      <view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view> 
+    </scroll-view>
+</view>
+ 
+    <!-- 发布帖子 -->
+    <view class='post-container'>
+      <view class='wall'></view>
+        <view class='post'>
+          <image src='../image/index-poster.png' bindtap='goto_add'></image>
+        </view>
+    </view>
+
+</view>

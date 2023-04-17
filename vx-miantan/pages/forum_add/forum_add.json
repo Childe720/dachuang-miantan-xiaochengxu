@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "投稿",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  }

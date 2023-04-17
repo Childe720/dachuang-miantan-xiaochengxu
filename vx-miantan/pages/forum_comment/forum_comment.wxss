@@ -1,0 +1,396 @@
+/* pages/forum_comment/forum_comment.wxss */
+/**index.wxss**/
+.signOut{
+	width: 100%;
+  height:96rpx;
+  line-height: 86rpx;
+  border-width: 1rpx ;
+  background: rgb(255, 255, 255);
+  color: rgb(12, 0, 119);
+  font-size: 42rpx;
+}
+  
+/*SpiderCard*/
+.w100 {
+	width: 100%;
+	
+}
+
+.p-card {
+ display: flex;
+ justify-content: center;
+   /* flex-flow: column;
+  position: relative; */
+  padding-left: 54rpx;
+  padding-right: 54rpx;
+}
+
+.profile {
+  width: 174rpx;
+  height: 174rpx;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  position: absolute;
+}
+
+.content {
+  padding: 30rpx;
+  margin-top: 96rpx;
+  width: 90%;
+  border: 4rpx solid #5bccb1;
+  border-radius: 16rpx;
+  background:#fff;
+}
+
+.content-top {
+	width: 100%;
+	display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.content-detail {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+
+}
+
+.content-top-img {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+
+.content-detail-top view {
+  flex-flow: row;
+}
+
+.name {
+  font-size: 40rpx;
+  font-weight: 900;
+  padding: 8rpx;
+}
+
+.title {
+  font-size: 24rpx;
+  padding: 4rpx;
+  color: #acacac;
+}
+
+/* .btns {
+  justify-content: center;
+  flex-flow: row;
+} */
+
+.icon {
+	margin: 32rpx;
+	display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+
+/* .btns text {
+  font-size: 28rpx;
+  margin-top: 16rpx;
+} */
+
+
+.detail-bottom {
+  /* justify-content: flex-start; */
+  padding-left:45rpx;
+  padding-right:45rpx;
+}
+
+.item {
+  margin: 20rpx;
+  flex-flow: row;
+  width: 100%;
+}
+
+
+.foot {
+  margin-top: 28rpx;
+  flex-flow: row;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.position {
+  height: 100%;
+  align-items: flex-end;
+  right: 0rpx;
+}
+
+.items {
+  flex-flow: row;
+  height: auto;
+  align-items: flex-end;
+}
+
+.pcard-foot {
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 32prx;
+}
+
+.address {
+  justify-content: space-between;
+}
+
+.address_view {
+  flex-flow: row;
+}
+
+
+
+.parent {
+  width: 100%;
+}
+.m-footer{
+  margin-top: 50rpx;
+}
+.menu-icon{
+  width: 84rpx;
+  height: 84rpx;
+}
+.menu-title-txt{
+  color: rgb(255, 255, 255);
+}
+.menu-list{
+  flex: 1;
+}
+.menu-list-middle{
+  margin-left: 130rpx;
+  margin-right: 130rpx;
+}
+
+.index-bg {
+	position: fixed;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+.m-more{
+  margin-top: 50rpx;
+  margin-bottom: 36rpx;
+}
+.more-btn{
+    width: 44rpx;
+    height: 44rpx;
+}
+.hide{
+  display: none;
+ }
+ .show{ 
+  display: block;
+ }
+
+ .home-company{
+  margin-top: 84rpx;
+  padding-left: 54rpx;
+  padding-right: 54rpx;
+}
+.icon-border{
+  border-width:5rpx;
+  height:25rpx;
+  border-radius:15rpx;    
+}
+.firm-name{
+  font-size:32rpx;
+  font-weight:bold;
+  margin-left:20rpx;    
+}
+.photo-model{
+  margin: 46rpx 0rpx 32rpx 0rpx;
+}
+.photo-swiper{
+  margin-top: 26rpx;
+  justify-content: space-between;
+}
+.icon-up{
+  width: 50rpx;
+  height: 50rpx;
+}
+.video-play {
+  border-width:1rpx;
+  height:316rpx;
+  width:100%;
+  border-radius:15rpx;
+  margin-bottom: 78rpx;
+}  
+.tip-txt {
+  font-size:22rpx;
+  color:rgb(93, 93 , 93);
+  line-height:20rpx;
+  margin-top: 58rpx;  
+}
+	
+/*common.wxss*/
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  line-height: 100%;
+}
+
+button::after {
+  border: none;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.img24 {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.img28 {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.img32 {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.img48 {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+/* ==================================主题================================== */
+
+
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ p-card ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.detail-bottom text {
+  margin-left: 16rpx;
+  font-size: 32rpx;
+  color: #5bccb1;
+}
+
+.pcard-foot text {
+  font-size: 20rpx;
+  margin-top: 8rpx;
+  color: #5bccb1;
+}
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ p-card ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ p-input ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.p-input {
+  width: 100%;
+  height: 68rpx;
+  width: 480rpx;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #5bccb1;
+  justify-content: flex-start;
+  padding-right: 12rpx;
+}
+.input-border{
+  border: 1px solid #ebfcf8;
+}
+
+.p-input-more {
+  width: 100%;
+  height: 68rpx;
+  justify-content: flex-start;
+  padding-right: 12rpx;
+}
+
+.input-title {
+  color: #5bccb1;
+  height: 100%;
+  font-size: 28rpx;
+  justify-content: center;
+}
+
+.p-i {
+  color: #5bccb1;
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  flex: 1;
+  margin-right: 10rpx;
+}
+
+.input-right {
+  background-color: transparent;
+  padding: 5rpx;
+  border: 1px solid #5bccb1;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #5bccb1;
+}
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ p-input ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ p-head ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.p-head {
+  height: 286rpx;
+  margin-top: 20rpx;
+  width: 618rpx;
+  margin-left: 66rpx;
+  margin-right: 66rpx;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #5bccb1;
+  border-radius: 10rpx;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.head-img {
+  width: 182rpx;
+  height: 182rpx;
+  border: 2rpx solid #5bccb1;
+  border-radius: 91rpx;
+}
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ p-head ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+
+/* ==================================主题================================== */
+
+/* ==================================评论栏================================== */
+.liuyan{
+  padding: 15rpx;
+  margin-top: 0rpx;
+  width: 100%;
+  border: 4rpx solid #5bccb1;
+  border-radius: 16rpx;
+  background:#fff;
+  font-size: 38rpx;
+  color: #acacac;
+}

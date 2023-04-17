@@ -1,0 +1,93 @@
+<!--pages/forum_find/forum_find.wxml-->
+<view>
+     <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" bindinput="getDevice"/>
+                </view>
+            </view>
+            <!-- 搜索按钮,调用搜索查询方法 -->
+            <view class="weui-search-bar__cancel-btn" bindtap='applySubmit'>搜索</view>
+        </view>
+    </view>
+</view>
+
+	<!--<view class='top-wrapper'>
+		<view class='search'>
+			<image src='../image/search.png'></image>
+			<input type="text" placeholder="请输入关键词查询..." bindinput="getDevice"></input>
+			<button bindtap="applySubmit" class="tx" style="position: relative; left: 27rpx; top: 0rpx; width: 182rpx; height: 86rpx; display: block; box-sizing: border-box">搜索</button>
+		</view>
+	</view>-->
+    <!--<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+		<view class="service-list">
+			<navigator class="service-item" wx:for="{{servicelist}}" wx:key="{{item.id}}" url="../servicedetail/servicedetail?id={{item.id}}">
+			<block>
+			    <view class="view_tupian_wenzi">
+				<view class="view_wenzi2">
+                    <view class="service-id">序号：{{item.id}}</view>
+                    <view class="service-title">标题：{{item.title}}</view>
+                    <view class="service-openid">作者：{{item.openid}}</view>
+                    <view class="service-content">{{item.content}}</view>
+                    <view class="service-create_time">发布时间：{{item.create_time}}</view>
+                </view>
+				</view>
+		    </block> 
+			</navigator>  
+		</view>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+	</scroll-view>-->
+<view class="container">
+</view>
+<view class="parent">
+	<!--<image class="index-bg" src="../image/forum_comment/bg-find1.jpg"></image>-->
+	<scroll-view scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+    <navigator wx:for="{{servicelist}}" wx:key="{{item.id}}">
+
+<!-- widget/p-card/index.wxml -->
+  <view class="p-card">
+    <view class="content">
+      <!--<view class="content-top">
+          <image class="img48" src="../image/forum_comment/theme.png"></image>
+					<image class="img48" src="../image/forum_comment/edit.png"></image>
+      </view>-->
+      <view class="content-detail w100">
+        <view class="content-detail-top d-column justify-start">
+          <text class="name">{{item.title}}</text>
+          <text class="title">{{item.content}}</text>
+        </view>
+
+				<view class="items">
+          <view class="detail-bottom justify-between">
+            <view class="item">
+              <image class="img48" src="../image/forum_comment/email.png"></image>
+              <text>评论者：{{item.openid}}</text>
+            </view>
+
+            <!-- <view class="item address d-row justify-between"> -->
+              <view class="flex-row">
+                <image class="img48" src="../image/forum_comment/position.png"></image>
+                <text>发布时间：{{item.create_time}}</text>
+              </view>
+            <!-- </view> -->
+          </view>
+        </view>
+
+        <view class="d-row justify-content w100">
+          <view class="icon" hover-stop-propagation="true">
+            <image class="img48" src="../image/forum_comment/like.png"></image> <text>800</text>
+						<image class="img48" src="../image/forum_comment/collect.png"></image> <text>1023</text>
+            <image class="img48" src="../image/forum_comment/browse.png"></image> <text>8866</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+    </navigator>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+  </scroll-view>
+</view>

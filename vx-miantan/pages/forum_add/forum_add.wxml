@@ -1,0 +1,34 @@
+<!--pages/forum_add/forum_add.wxml-->
+<!-- 发表评论 -->
+<view class="question-container" catchtouchmove="ture" >
+  <view id="input-title" class="input-title-container">
+    <input type="text" bindinput="inputTitle" class="input-title" placeholder='请输入标题（必填）'
+    adjust-position bindfocus="keyboardFocus" bindblur="getDeviceTiltle"
+     style="width: 690rpx; height: 88rpx; display: block; box-sizing: border-box">
+    </input>
+  </view>
+  <view class="input-content-container">
+    <textarea maxlength="{{-1}}" bindinput="getDeviceContent" value="{{content_text}}"
+    class="input-content" placeholder="请尽情发挥吧..."
+    bindfocus="keyboardFocus" bindblur="keyboardBlur" adjust-position
+    ></textarea>
+  </view>
+
+  <!-- 上传照片的部分（待修改js） -->
+  <!-- <view id="image-container" class="image-container">
+    <view wx:for="{{medias}}" wx:for-item="item" wx:for-index="index" wx:key="id" class="image-item">
+      <image src="../image/clear.png" class="delete-image" bindtap="deleteMediaItem" data-item="{{item}}"></image>
+      <image wx:if="{{item.type === 'image'}}" mode="aspectFill" class="tmp-image" src="{{item.url}}"></image>
+      <video controls="{{false}}" show-center-play-btn="{{false}}" wx:if="{{item.type === 'video'}}" class="tmp-image" src="{{item.url}}"></video>
+    </view>
+  </view> -->
+
+  <view id="bottom-container" class="bottom-container" style="position: absolute; left: 0rpx; top: 873rpx">
+    <image bindtap='chooseImage' class="media-item media-image" src="../image/choose-image.png"></image>
+    <image bindtap='chooseVideo' class="media-item media-video" src="../image/choose-video.png"></image>
+    <!-- <view bindtap='nextStep' class="next-step {{nextStepEnabled ? 'enabled' : 'disabled'}}">下一步</view> -->
+  <view class="btn-submit">
+    <button class="btn-blue" style="position: relative; left: -12rpx; top: 66rpx" bindtap="tanchuang">提交</button>
+  </view>
+  </view>
+</view>
